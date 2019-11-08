@@ -19,14 +19,17 @@ public class PokemonBattle {
 	}
 	public static void damage(String pokemon) {
 		Scanner userInput = new Scanner (System.in);
-		System.out.println("Trainer, what is your " + pokemon + "'s level?");
+		System.out.print("Trainer, what is your " + pokemon + "'s level?");
 		int level = userInput.nextInt();
-		System.out.println("Trainer, what is your " + pokemon + "'s attack?");
+		System.out.print("Trainer, what is your " + pokemon + "'s attack?");
 		int attack = userInput.nextInt();
-		System.out.println("Trainer, what is your " + pokemon + "'s defense?");
+		System.out.print("Trainer, what is your " + pokemon + "'s defense?");
 		int defence = userInput.nextInt();
+		System.out.print("Trainer, what is your " + pokemon + "'s HP?");
 		int hP = userInput.nextInt();
 		int damage = calc(level, attack, defence);
+		hP = hP - damage;
+		System.out.print("Your " + pokemon + " sustained " + damage + " points of damage. It now has " + hP + " HP.");
 	}
 	public static void statsTable() {
 		
