@@ -5,7 +5,7 @@ public class PokemonBattle {
 		// TODO Auto-generated method stub
 			String pokemon = battleStart();
 			damage(pokemon);
-			statsTable();
+			statsTable(pokemon);
 	}
 	public static String battleStart() {
 		Scanner userInput = new Scanner (System.in);
@@ -17,7 +17,7 @@ public class PokemonBattle {
 		System.out.println(pokemon + ", Go!");
 		return pokemon;
 	}
-	public static void damage(String pokemon) {
+	public static int damage(String pokemon) {
 		Scanner userInput = new Scanner (System.in);
 		System.out.print("Trainer, what is your " + pokemon + "'s level?");
 		int level = userInput.nextInt();
@@ -28,10 +28,11 @@ public class PokemonBattle {
 		System.out.print("Trainer, what is your " + pokemon + "'s HP?");
 		int hP = userInput.nextInt();
 		int damage = calc(level, attack, defence);
-		hP = hP - damage;
-		System.out.print("Your " + pokemon + " sustained " + damage + " points of damage. It now has " + hP + " HP.");
+		int dmgHP = hP - damage;
+		System.out.print("Your " + pokemon + " sustained " + damage + " points of damage. It now has " + dmgHP + " HP.");
+		return 
 	}
-	public static void statsTable() {
+	public static void statsTable(String name; ) {
 		
 	}
 	public static int calc (int level, int attack, int defence) {
