@@ -1,0 +1,18 @@
+Total Grade: 23/25
+
+Correct Output: 10/10
+User Interface: 4/5
+Return Values:  2/3
+Parameters:     3/3
+Pseudocode:     2/2
+Style Guide:    2/2
+
+Great work!
+
+Just a couple minor issues.  After calculating the damage, you use a "print" instead of a "println" to print out the new HP
+value, which means that the start of your stats table ends up stuck at the end of that printed line.  Also, you aren't passing
+the new HP value back out of your damage() method, but the entered HP value.  You need to be passing the newly-updated HP
+value out of that routine so that it is what will print on the stats table.
+
+I loved that you created a separate method to do the complex calculation.  That's a great extra step!  It makes the code much
+easier to read, and makes that calculation easier to test.  Well done.
