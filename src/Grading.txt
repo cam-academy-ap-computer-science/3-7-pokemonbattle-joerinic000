@@ -1,10 +1,10 @@
-Total Grade: 23/25
+Total Grade: 21/25
 
 Correct Output: 10/10
 User Interface: 4/5
 Return Values:  2/3
 Parameters:     3/3
-Pseudocode:     2/2
+Pseudocode:     0/2
 Style Guide:    2/2
 
 Great work!
@@ -16,3 +16,5 @@ value out of that routine so that it is what will print on the stats table.
 
 I loved that you created a separate method to do the complex calculation.  That's a great extra step!  It makes the code much
 easier to read, and makes that calculation easier to test.  Well done.
+
+Next time, please write pseudocode and add comments to your code.  It really is very important.
